@@ -56,13 +56,13 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 		}
 		else{
 			resp.getWriter().print("<h1 style='color:red'>You are not old enough to register</h1>");
-			req.getRequestDispatcher("Register_Form.html").include(req, resp);
+			req.getRequestDispatcher("Register.html").include(req, resp);
 		}
 
 }
 	else{
 		resp.getWriter().print("<h1 style='color:red'>You are not old enough to register</h1>");
-		req.getRequestDispatcher("Register_Form.html").include(req, resp);
+		req.getRequestDispatcher("Register.html").include(req, resp);
 	}
 	
 }	
